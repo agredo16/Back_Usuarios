@@ -8,9 +8,12 @@ const Administrador = require('./models/Administrador');
 const SuperAdmin = require('./models/SuperAdmin');
 const UsuarioController = require('./controllers/usuarioController');
 
+
+const cors = require('cors');
 const app = express();
 app.use(express.json());
 
+app.use(cors());
 async function iniciarServidor() {
   const db = await connectDB();
   
