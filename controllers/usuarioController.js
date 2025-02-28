@@ -25,7 +25,7 @@ class UsuarioController {
       // Crear usuario base
       const usuarioResult = await this.usuarioModel.crear({
         email,
-        password: hashedPassword, // Guardar la contraseña hasheada
+        password: hashedPassword, 
         nombre,
         tipo,
         documento,
